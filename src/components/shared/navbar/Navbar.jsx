@@ -38,7 +38,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 mt-10">
+    <nav className="navbar bg-base-100 mt-10">
       <div className="flex gap-5 justify-between container mx-auto md:px-5">
         <div className="navbar-start">
           <div className="dropdown">
@@ -82,7 +82,7 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

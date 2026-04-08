@@ -4,7 +4,7 @@ import "./index.css";
 import { RouterProvider } from "react-router";
 import router from "./routes/Routes";
 import BookContextProvider from "./context/BookContextProvider";
-import { Toaster } from "react-hot-toast";
+
 import { Bounce, ToastContainer } from "react-toastify";
 
 createRoot(document.getElementById("root")).render(

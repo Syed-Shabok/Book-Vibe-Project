@@ -5,7 +5,7 @@ import { Link } from "react-router";
 const BookCard = ({ book }) => {
   return (
     <Link
-      to={`bookDetails/${book.bookId}`}
+      to={`/bookDetails/${book.bookId}`}
       key={book.bookId}
       className="card bg-base-100 shadow-sm"
     >

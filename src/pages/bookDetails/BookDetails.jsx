@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLoaderData, useParams } from "react-router";
+import { BookContext } from "../../context/BookContextProvider";
 
 const BookDetails = () => {
   const { bookId: selectedBookId } = useParams();
@@ -10,6 +11,8 @@ const BookDetails = () => {
     (book) => book.bookId === Number(selectedBookId),
   );
   //   console.log(selectedBook);
+
+  const { handleMarkAsRead, handleAddToWishlist } = useContext(BookContext);
 
   return (
     <div className="card lg:card-side bg-base-100 container mx-auto my-15 grid grid-cols-2 gap-5">
@@ -78,12 +81,18 @@ const BookDetails = () => {
         </table>
 
         <div className="card-actions mt-5 space-x-2">
-          <button className="btn text-lg font-medium py-6 px-6 rounded-lg">
-            Read
+          <button
+            onClick={() => handleMarkAsRead(selectedBook)}
+            className="btn text-lg font-medium py-6 px-6 rounded-lg"
+          >
+            Mark as Read
           </button>
 
-          <button className="btn text-[#FFFFFF] bg-[#59C6D2] text-lg py-6 px-6 rounded-lg">
-            Wishlist
+          <button
+            onClick={() => handleAddToWishlist(selectedBook)}
+            className="btn text-[#FFFFFF] bg-[#59C6D2] text-lg py-6 px-6 rounded-lg"
+          >
+            Add to Wishlist
           </button>
         </div>
       </div>

@@ -1,7 +1,7 @@
-# 📚 Books Vibe
+# 📚 Books Vibe - A Book Management App
 
 <p align="left">
-  <a href="https://your-live-link.com" target="_blank">
+  <a href="https://book-vibes-project.netlify.app/" target="_blank">
     <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Click%20Here-success?style=for-the-badge">
   </a>
 </p>

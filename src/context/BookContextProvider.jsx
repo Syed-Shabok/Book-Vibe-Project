@@ -48,8 +48,10 @@ const BookContextProvider = ({ children }) => {
 
   const data = {
     readList,
+    setReadList,
     handleMarkAsRead,
     wishList,
+    setWishList,
     handleAddToWishlist,
   };
 

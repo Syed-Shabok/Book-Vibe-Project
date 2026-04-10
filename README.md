@@ -26,12 +26,38 @@ This project leverages the latest tools in the React ecosystem for performance a
 ---
 
 ## ✨ Main Features
-- **Dynamic Book Browsing:** Explore books with clean, structured cards showcasing metadata.
-- **Dual List Management:** Separate tabs for **Read List** and **Wishlist** to organize your reading journey.
-- **Smart Validation:** Prevents duplicate entries to keep your collections clean.
-- **Interactive UI Components:** Smooth tab switching, ratings display, and category tags.
-- **Instant Feedback:** Toast notifications via **React Toastify** for every user action (Add/Remove).
-- **Responsive Layout:** Optimized for mobile, tablet, and desktop screens.
+### 📚 Book Management
+- Browse a dynamic collection of books
+- View detailed book information including rating, publisher, and tags
+- Prevent duplicate additions in Read List and Wishlist
+
+### ❤️ Read List & Wishlist System
+- Separate management for **Read List** and **Wishlist**
+- Persistent global state using Context API
+- Easy switching between lists using tabs
+
+### 🔃 Sorting System (NEW)
+- Sort books by:
+  - ⭐ Rating
+  - 📅 Year of Publishing
+  - 📄 Number of Pages
+- Dynamic UI updates without page reload
+
+### 📊 Data Visualization (NEW)
+- Visual representation of book data using charts
+- Displays **number of pages for books in the Read List**
+- Helps users quickly understand reading volume
+
+### 🧭 Navigation & UI
+- Fully responsive navbar
+- Active route highlighting using NavLink
+- Mobile-friendly dropdown menu
+- Modern card-based UI layout
+
+### 🔔 User Experience
+- Toast notifications for all actions (add/remove)
+- Empty state UI for lists
+- Smooth transitions and hover effects
 
 ---
 
@@ -43,8 +69,10 @@ The application uses the following libraries to enhance functionality:
 | `react-router-dom` | Client-side routing and navigation |
 | `react-tabs` | Accessible and clean tab organization |
 | `react-toastify` | Beautiful, non-blocking user notifications |
+| recharts | Data visualization and charts |
 | `react-icons` | Comprehensive library for UI iconography |
 | `clsx` & `tailwind-merge` | Utility for dynamic CSS class management |
+
 
 ---
 
